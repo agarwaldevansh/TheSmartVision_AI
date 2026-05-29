@@ -1,0 +1,119 @@
+2026-05-23 11:46:10.046475: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-23 11:46:10.075869: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m847[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr_4.jpeg
+⏳ Loading Transformer-OCR Engine onto CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                   | 0/478 [00:00<?, ?it/s]Loading weights: 100%|███████████████████████████████████████████████████████| 478/478 [00:00<00:00, 6356.54it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-base-handwritten
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.weight | [31mMISSING[0m | 
+encoder.pooler.dense.bias   | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+✅ TrOCR Handwriting Model Loaded Successfully!
+📤 OCR Result: {'extracted_text': '" My name is Assistant Jain .\nMy roommate name is Devansh Agrawal .', 'confidence': '98.50% (Transformer Native)', 'lines': ['" My name is Assistant Jain .', 'My roommate name is Devansh Agrawal .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr2.jpeg
+📤 OCR Result: {'extracted_text': '6 References\n# considerable sex course only in more kept .\nthe instructor can be heardably one cleft .', 'confidence': '98.50% (Transformer Native)', 'lines': ['6 References', '# considerable sex course only in more kept .', 'the instructor can be heardably one cleft .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'HELD', 'confidence': '98.50% (Transformer Native)', 'lines': ['HELD'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr2.jpeg
+📤 OCR Result: {'extracted_text': '6 References\n# considerable sex course only in more kept .\nthe instructor can be heardably one cleft .', 'confidence': '98.50% (Transformer Native)', 'lines': ['6 References', '# considerable sex course only in more kept .', 'the instructor can be heardably one cleft .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr6.jpeg
+📤 OCR Result: {'extracted_text': '0 0\noff', 'confidence': '98.50% (Transformer Native)', 'lines': ['0 0', 'off'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr3.jpeg
+📤 OCR Result: {'extracted_text': '3 Assume suitable data whenever necessary\nO A thin trapezoidal steel plate is loaded', 'confidence': '98.50% (Transformer Native)', 'lines': ['3 Assume suitable data whenever necessary', 'O A thin trapezoidal steel plate is loaded'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 74ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '29.80%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 15ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '29.80%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr1.jpeg
+📤 OCR Result: {'extracted_text': "Initially the car travels along a straight road with a speed of 35m's if the\nIbrakes are applied and the speed of the car is reduced to 1 0m's in 15sec\ndetermine the constant deceleration of the car .00030003000\nIf the football is kicked at the 459 , determine its minimum initial speed VA\nso that it passes over the goal post at C. At what distance is from the goal\npost will the football strike the ground at B.2,00030003000", 'confidence': '98.50% (Transformer Native)', 'lines': ["Initially the car travels along a straight road with a speed of 35m's if the", "Ibrakes are applied and the speed of the car is reduced to 1 0m's in 15sec", 'determine the constant deceleration of the car .00030003000', 'If the football is kicked at the 459 , determine its minimum initial speed VA', 'so that it passes over the goal post at C. At what distance is from the goal', 'post will the football strike the ground at B.2,00030003000'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 49ms/step
+📤 Doodle Result: {'doodle': 'tree', 'confidence': '25.25%', 'Classes': ['car', 'tree', 'apple', 'flower', 'cat', 'house']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 16ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '44.01%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Mozispeh .', 'confidence': '98.50% (Transformer Native)', 'lines': ['Mozispeh .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Mozispeh .', 'confidence': '98.50% (Transformer Native)', 'lines': ['Mozispeh .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m847[0m]

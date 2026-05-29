@@ -1,0 +1,93 @@
+2026-05-22 14:33:31.844412: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-22 14:33:31.879046: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m1260[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+⏳ Loading Transformer-OCR Engine onto CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+preprocessor_config.json:   0%|                                                                                             | 0.00/224 [00:00<?, ?B/s]preprocessor_config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 224/224 [00:00<00:00, 1.86MB/s]
+config.json:   0%|                                                                                                        | 0.00/4.17k [00:00<?, ?B/s]config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 4.17k/4.17k [00:00<00:00, 12.7MB/s]
+tokenizer_config.json:   0%|                                                                                              | 0.00/1.12k [00:00<?, ?B/s]tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1.12k/1.12k [00:00<00:00, 4.82MB/s]
+vocab.json:   0%|                                                                                                          | 0.00/899k [00:00<?, ?B/s]vocab.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 899k/899k [00:00<00:00, 98.2MB/s]
+merges.txt:   0%|                                                                                                          | 0.00/456k [00:00<?, ?B/s]merges.txt: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 456k/456k [00:00<00:00, 120MB/s]
+special_tokens_map.json:   0%|                                                                                              | 0.00/772 [00:00<?, ?B/s]special_tokens_map.json: 100%|███████████████████████████████████████████████████████████████████████████████████████| 772/772 [00:00<00:00, 7.98MB/s]
+model.safetensors:   0%|                                                                                                  | 0.00/1.33G [00:00<?, ?B/s]model.safetensors:  10%|█████████                                                                                 | 134M/1.33G [00:01<00:15, 76.2MB/s]model.safetensors:  25%|██████████████████████▋                                                                   | 335M/1.33G [00:03<00:10, 91.4MB/s]model.safetensors: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 1.33G/1.33G [00:08<00:00, 166MB/s]model.safetensors: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 1.33G/1.33G [00:09<00:00, 134MB/s]
+Loading weights:   0%|                                                                                                        | 0/478 [00:00<?, ?it/s]Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 478/478 [00:00<00:00, 6556.43it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-base-handwritten
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.bias   | [31mMISSING[0m | 
+encoder.pooler.dense.weight | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+generation_config.json:   0%|                                                                                               | 0.00/190 [00:00<?, ?B/s]generation_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 190/190 [00:00<00:00, 1.88MB/s]
+✅ TrOCR Handwriting Model Loaded Successfully!
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 87ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '66.39%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 16ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '66.23%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 15ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '69.50%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '66.39%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '71.42%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '94.99%'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'smartvisional .', 'confidence': '98.50% (Transformer Native)', 'lines': ['smartvisional .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'smartvisional .', 'confidence': '98.50% (Transformer Native)', 'lines': ['smartvisional .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.84.4.156:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m1260[0m]

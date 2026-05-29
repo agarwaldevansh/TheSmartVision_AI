@@ -1,0 +1,132 @@
+2026-05-22 14:12:32.754464: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-22 14:12:32.816355: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/runner/workspace/main.py", line 8, in <module>
+    from app.digit_recognition import predict_digit, load_model as load_digit_model
+  File "/home/runner/workspace/app/digit_recognition.py", line 1, in <module>
+    import tensorflow as tf
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/__init__.py", line 48, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__ import autograph
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/autograph/__init__.py", line 8, in <module>
+    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/core/ag_ctx.py", line 21, in <module>
+    from tensorflow.python.autograph.utils import ag_logging
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/__init__.py", line 17, in <module>
+    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/context_managers.py", line 19, in <module>
+    from tensorflow.python.framework import ops
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/ops.py", line 41, in <module>
+    from tensorflow.python import pywrap_tfe
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/pywrap_tfe.py", line 25, in <module>
+    from tensorflow.python._pywrap_tfe import *
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/runner/workspace/main.py", line 8, in <module>
+    from app.digit_recognition import predict_digit, load_model as load_digit_model
+  File "/home/runner/workspace/app/digit_recognition.py", line 1, in <module>
+    import tensorflow as tf
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/__init__.py", line 48, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__ import autograph
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/autograph/__init__.py", line 8, in <module>
+    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/core/ag_ctx.py", line 21, in <module>
+    from tensorflow.python.autograph.utils import ag_logging
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/__init__.py", line 17, in <module>
+    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/context_managers.py", line 19, in <module>
+    from tensorflow.python.framework import ops
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/ops.py", line 44, in <module>
+    from tensorflow.python.client import pywrap_tf_session
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/client/pywrap_tf_session.py", line 19, in <module>
+    from tensorflow.python.client._pywrap_tf_session import *
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/runner/workspace/main.py", line 8, in <module>
+    from app.digit_recognition import predict_digit, load_model as load_digit_model
+  File "/home/runner/workspace/app/digit_recognition.py", line 1, in <module>
+    import tensorflow as tf
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/__init__.py", line 48, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__ import autograph
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/autograph/__init__.py", line 8, in <module>
+    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/core/ag_ctx.py", line 21, in <module>
+    from tensorflow.python.autograph.utils import ag_logging
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/__init__.py", line 17, in <module>
+    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/context_managers.py", line 19, in <module>
+    from tensorflow.python.framework import ops
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/ops.py", line 45, in <module>
+    from tensorflow.python.eager import context
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/eager/context.py", line 37, in <module>
+    from tensorflow.python.eager import execute
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/eager/execute.py", line 21, in <module>
+    from tensorflow.python.framework import dtypes
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/dtypes.py", line 21, in <module>
+    import ml_dtypes
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ml_dtypes/__init__.py", line 32, in <module>
+    from ml_dtypes._custom_floats import bfloat16
+AttributeError: _ARRAY_API not found
+ImportError: numpy.core._multiarray_umath failed to import
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 8, in <module>
+    from app.digit_recognition import predict_digit, load_model as load_digit_model
+  File "/home/runner/workspace/app/digit_recognition.py", line 1, in <module>
+    import tensorflow as tf
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/__init__.py", line 48, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__ import autograph
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/_api/v2/__internal__/autograph/__init__.py", line 8, in <module>
+    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/core/ag_ctx.py", line 21, in <module>
+    from tensorflow.python.autograph.utils import ag_logging
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/__init__.py", line 17, in <module>
+    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/autograph/utils/context_managers.py", line 19, in <module>
+    from tensorflow.python.framework import ops
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/ops.py", line 45, in <module>
+    from tensorflow.python.eager import context
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/eager/context.py", line 37, in <module>
+    from tensorflow.python.eager import execute
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/eager/execute.py", line 21, in <module>
+    from tensorflow.python.framework import dtypes
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/tensorflow/python/framework/dtypes.py", line 21, in <module>
+    import ml_dtypes
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ml_dtypes/__init__.py", line 32, in <module>
+    from ml_dtypes._custom_floats import bfloat16
+ImportError: numpy.core.umath failed to import

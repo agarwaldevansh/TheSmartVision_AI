@@ -1,0 +1,91 @@
+2026-05-23 12:10:35.558251: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-23 12:10:35.585602: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m1250[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr_4.jpeg
+⏳ Loading Transformer-OCR Engine onto CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                   | 0/478 [00:00<?, ?it/s]Loading weights: 100%|███████████████████████████████████████████████████████| 478/478 [00:00<00:00, 4946.24it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-base-handwritten
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.weight | [31mMISSING[0m | 
+encoder.pooler.dense.bias   | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+✅ TrOCR Handwriting Model Loaded Successfully!
+📤 OCR Result: {'extracted_text': '" My name is Assistant Jain .\nMy roommate name is Deransh Agrawal .', 'confidence': '80.88%', 'lines': ['" My name is Assistant Jain .', 'My roommate name is Deransh Agrawal .']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr6.jpeg
+📤 OCR Result: {'extracted_text': 'treats , a man in Toronto a limited epithet\nThe project aims to create a position for running\nThat can recognise numbers , letters , that\nI and handbook themselves to the Philippines .', 'confidence': '17.44%', 'lines': ['treats , a man in Toronto a limited epithet', 'The project aims to create a position for running', 'That can recognise numbers , letters , that', 'I and handbook themselves to the Philippines .']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr1.jpeg
+📤 OCR Result: {'extracted_text': 'Initially the car travels along a straight road with a speed of 35m\'s if the\nbrakes are applied and the speed of the car is reduced to 1 0m\'s in 15sec\ndetermine the constant deceleration of the car .00030003000\nIf the football is kicked at the 45" , determine its minimum initial speed VA\nso that it passes over the goal post at C. At what distance is from the goal\npost will the football strike the ground at B.Y000800030003000', 'confidence': '51.69%', 'lines': ["Initially the car travels along a straight road with a speed of 35m's if the", "brakes are applied and the speed of the car is reduced to 1 0m's in 15sec", 'determine the constant deceleration of the car .00030003000', 'If the football is kicked at the 45" , determine its minimum initial speed VA', 'so that it passes over the goal post at C. At what distance is from the goal', 'post will the football strike the ground at B.Y000800030003000']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: prn.jpeg
+📤 OCR Result: {'extracted_text': 'REORHOLDY0E7O.', 'confidence': '65.87%', 'lines': ['REORHOLDY0E7O.']}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m

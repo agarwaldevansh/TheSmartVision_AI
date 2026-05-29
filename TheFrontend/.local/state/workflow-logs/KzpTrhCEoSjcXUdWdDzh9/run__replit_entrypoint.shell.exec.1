@@ -1,0 +1,172 @@
+2026-05-22 13:17:27.618424: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-22 13:17:31.305933: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m202[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.0.185:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.0.185:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.0.185:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.12.19:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr3.jpeg
+⏳ Loading EasyOCR...
+Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+✅ EasyOCR Loaded!
+🔍 Source detected: photo
+🔍 OCR Attempt 1/4...
+/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/torch/utils/data/dataloader.py:775: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+   Attempt 1: 35.6% confidence
+🔍 OCR Attempt 2/4...
+   Attempt 2: 33.0% confidence
+🔍 OCR Attempt 3/4...
+   Attempt 3: 23.3% confidence
+🔍 OCR Attempt 4/4...
+   Attempt 4: 35.7% confidence
+📤 OCR Result: {'extracted_text': 'Assume Suitable data whenever necessary\nA thin trapezoidal steel Plate is loaded', 'confidence': '35.71%', 'lines': ['Assume Suitable data whenever necessary', 'A thin trapezoidal steel Plate is loaded'], 'source_type': 'photo', 'attempt_used': 4}
+[32mINFO[0m:     10.84.12.19:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: test_ocr_4.jpeg
+🔍 Source detected: photo
+🔍 OCR Attempt 1/4...
+   Attempt 1: 7.8% confidence
+🔍 OCR Attempt 2/4...
+   Attempt 2: 7.1% confidence
+🔍 OCR Attempt 3/4...
+   Attempt 3: 11.3% confidence
+🔍 OCR Attempt 4/4...
+   Attempt 4: 6.0% confidence
+📤 OCR Result: {'extracted_text': 'My Sane # Avfhaat Jk.\nMj roommate me %c Death Aground', 'confidence': '11.25%', 'lines': ['My Sane # Avfhaat Jk.', 'Mj roommate me %c Death Aground'], 'source_type': 'photo', 'attempt_used': 3}
+[32mINFO[0m:     10.84.12.19:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.3.129:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.4.156:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.3.129:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+🔍 Source detected: dark_canvas
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'source_type': 'dark_canvas', 'attempt_used': 1, 'message': 'No text detected. Try writing darker or larger.'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+🔍 Source detected: dark_canvas
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'source_type': 'dark_canvas', 'attempt_used': 1, 'message': 'No text detected. Try writing darker or larger.'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+🔍 Source detected: dark_canvas
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'source_type': 'dark_canvas', 'attempt_used': 1, 'message': 'No text detected. Try writing darker or larger.'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 474ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '87.36%'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 15ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '87.36%'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 17ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '87.36%'}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.9.182:0 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.84.9.182:0 - "[1mGET /openapi.json HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: WhatsApp Image 2026-05-22 at 19.13.23.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: WhatsApp Image 2026-05-22 at 19.13.23.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: WhatsApp Image 2026-05-22 at 19.13.23.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: WhatsApp Image 2026-05-22 at 19.13.23.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: WhatsApp Image 2026-05-22 at 19.13.23.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 14ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: Digit 8.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: test_dig_8.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 8, 'confidence': '100.00%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: test_dig_5.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 5, 'confidence': '100.00%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: test_dig_6.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 14ms/step
+📤 Single Digit Result: {'digit': 6, 'confidence': '97.21%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: test_dig_7.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 8, 'confidence': '69.94%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: test_dig_4.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 13ms/step
+📤 Single Digit Result: {'digit': 4, 'confidence': '100.00%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: Digit 8.jpeg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 12ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '59.04%'}
+[32mINFO[0m:     10.84.0.185:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+🔍 Source detected: canvas
+📤 OCR Result: {'extracted_text': 'Alarm\nFire\nTi\n~XA#xiterf_ #102il\nsix\nMarcos\n40\nCALRARi-tttit\n~Xi\n~soriitetrihridrgz\nTJ ~_\nWild\nl_-\nd3\nEnrique _3356z n\n{lZiiLL\n32\n~~distl_16r-X73j:\nTLLZI?I\nA-\n47+05007-06*3n\'\n3L\nlast -I~\n3\nAl4\nLate\njail\nCr *\ntent all\n+1LI-\n~ST"el_~T_Ltf\nGL\ntaxi #\nXrL__L_S-t\nKX+XSC#LII=\nIIcnr_L.\nL_SiccS*ISD_TaC__\nLet\n_L_J__SIEICSIICLLZ_t\n17L\n47k\nLL C\nOTLLJo\n7er3_\nten\n3381014\nMeiosis\nLast\nsilly _3f\n13it\nLl+4\n#LET\n~e\nSoli ~iI_ _\nLine\nStill\n~725\nvisit TT7 air\nWill\nIt\n0217+\nLL_\n2\nJi\nLit\n#SX-CULCITILSLLI\nTICCCZAELCILLIc-L\n732\n7*4c7/_74o:"338\n27_\nthat let Vila\nLet\nILiILiiIE-JZAL zip rid\nLLJ_LLIC\nLviv\nLCS-O17IXi_aILliLO #CIILYCIJtL 7\' -7L472\nnice\n3" \'\nLLILLE_LTL\n[72656774170655-\n715 - L-G1\nC#CSIXXCCLTEIITAIILALL_\nT<:\n~\n23\nArctic\n13y all Matt _\nJust\nLot\nL\nD _ CC-\nCult\nlt5,\nA_IL-:\nTutti\nC\nTrack 7M+\n74\nX_2\nJail\nCraze\n01 42\n7;\n# _\nAir\n=55S\nallied\nAdmit\nP*_7\nrid n\nL\nr\nis\n~a\nlie\n#ate\nLick\nert\nLegal\nFiddle UCCILi-CRC_lL\n"#ATE Terms\nI7 = Alley\nBe\nA \'i LJ l>\n300+_iLMEON~EeLae t\n1727+S\n3*7C C\n33-_2\nOr\n~JICCJI_LiL_\nClinic\n225\' LA\n\'_L;\n9X~\nlletligt_LCIIi___\nLEe car\nL1\n1323626\nT~t+_\nL57\n{_oiir?2TCET Tenet\n~I\nLilies\nyou tISRACL~5X\nL _I\nLie\nU1_ ~\n~priTrI7R_oXTLC_\nLCiALLLL\nTell _i\nmSliyTRClL sill\nTry [ IL\nfix\ncox +1\nLoci\n77nt727tilLESr_t__\n~-S3 Icing\nXini.r-#tt is\nC#SCSS_Ci~\nStttxi t75\'7575\n374*1\nFind\nK__LA_LLCS_\n>-*ICOULILLEEIC\nice\nR-I_IDE#CIGIESIE\nxenon _c~\nThese\n73=\nTry ^173\nLL=\n3J8 ~1_\n~Co\nE3265\nS +itnuzviE?', 'confidence': '3.75%', 'lines': ['Alarm', 'Fire', 'Ti', '~XA#xiterf_ #102il', 'six', 'Marcos', '40', 'CALRARi-tttit', '~Xi', '~soriitetrihridrgz', 'TJ ~_', 'Wild', 'l_-', 'd3', 'Enrique _3356z n', '{lZiiLL', '32', '~~distl_16r-X73j:', 'TLLZI?I', 'A-', "47+05007-06*3n'", '3L', 'last -I~', '3', 'Al4', 'Late', 'jail', 'Cr *', 'tent all', '+1LI-', '~ST"el_~T_Ltf', 'GL', 'taxi #', 'XrL__L_S-t', 'KX+XSC#LII=', 'IIcnr_L.', 'L_SiccS*ISD_TaC__', 'Let', '_L_J__SIEICSIICLLZ_t', '17L', '47k', 'LL C', 'OTLLJo', '7er3_', 'ten', '3381014', 'Meiosis', 'Last', 'silly _3f', '13it', 'Ll+4', '#LET', '~e', 'Soli ~iI_ _', 'Line', 'Still', '~725', 'visit TT7 air', 'Will', 'It', '0217+', 'LL_', '2', 'Ji', 'Lit', '#SX-CULCITILSLLI', 'TICCCZAELCILLIc-L', '732', '7*4c7/_74o:"338', '27_', 'that let Vila', 'Let', 'ILiILiiIE-JZAL zip rid', 'LLJ_LLIC', 'Lviv', "LCS-O17IXi_aILliLO #CIILYCIJtL 7' -7L472", 'nice', '3" \'', 'LLILLE_LTL', '[72656774170655-', '715 - L-G1', 'C#CSIXXCCLTEIITAIILALL_', 'T<:', '~', '23', 'Arctic', '13y all Matt _', 'Just', 'Lot', 'L', 'D _ CC-', 'Cult', 'lt5,', 'A_IL-:', 'Tutti', 'C', 'Track 7M+', '74', 'X_2', 'Jail', 'Craze', '01 42', '7;', '# _', 'Air', '=55S', 'allied', 'Admit', 'P*_7', 'rid n', 'L', 'r', 'is', '~a', 'lie', '#ate', 'Lick', 'ert', 'Legal', 'Fiddle UCCILi-CRC_lL', '"#ATE Terms', 'I7 = Alley', 'Be', "A 'i LJ l>", '300+_iLMEON~EeLae t', '1727+S', '3*7C C', '33-_2', 'Or', '~JICCJI_LiL_', 'Clinic', "225' LA", "'_L;", '9X~', 'lletligt_LCIIi___', 'LEe car', 'L1', '1323626', 'T~t+_', 'L57', '{_oiir?2TCET Tenet', '~I', 'Lilies', 'you tISRACL~5X', 'L _I', 'Lie', 'U1_ ~', '~priTrI7R_oXTLC_', 'LCiALLLL', 'Tell _i', 'mSliyTRClL sill', 'Try [ IL', 'fix', 'cox +1', 'Loci', '77nt727tilLESr_t__', '~-S3 Icing', 'Xini.r-#tt is', 'C#SCSS_Ci~', "Stttxi t75'7575", '374*1', 'Find', 'K__LA_LLCS_', '>-*ICOULILLEEIC', 'ice', 'R-I_IDE#CIGIESIE', 'xenon _c~', 'These', '73=', 'Try ^173', 'LL=', '3J8 ~1_', '~Co', 'E3265', 'S +itnuzviE?'], 'source_type': 'canvas', 'attempt_used': 1}
+[32mINFO[0m:     10.84.11.60:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m202[0m]

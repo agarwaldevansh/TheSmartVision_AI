@@ -1,0 +1,127 @@
+2026-05-23 11:13:47.447585: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-23 11:13:51.509085: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m226[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 212ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '41.55%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 14ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '59.45%'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+⏳ Loading Transformer-OCR Engine onto CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                                                        | 0/478 [00:00<?, ?it/s]Loading weights:   2%|█▊                                                                                              | 9/478 [00:00<00:08, 52.13it/s]Loading weights:   4%|███▍                                                                                           | 17/478 [00:00<00:13, 34.59it/s]Loading weights:   4%|████▏                                                                                          | 21/478 [00:00<00:17, 25.95it/s]Loading weights:   5%|████▊                                                                                          | 24/478 [00:00<00:22, 20.04it/s]Loading weights:   6%|█████▎                                                                                         | 27/478 [00:01<00:27, 16.58it/s]Loading weights:   6%|█████▊                                                                                         | 29/478 [00:01<00:47,  9.53it/s]Loading weights:  10%|█████████▏                                                                                     | 46/478 [00:02<00:18, 23.11it/s]Loading weights:  11%|██████████▋                                                                                    | 54/478 [00:02<00:16, 26.25it/s]Loading weights:  13%|███████████▉                                                                                   | 60/478 [00:02<00:16, 24.73it/s]Loading weights:  13%|████████████▌                                                                                  | 63/478 [00:02<00:18, 22.54it/s]Loading weights:  16%|███████████████▌                                                                               | 78/478 [00:03<00:12, 31.17it/s]Loading weights:  19%|█████████████████▉                                                                             | 90/478 [00:03<00:11, 35.15it/s]Loading weights:  20%|██████████████████▋                                                                            | 94/478 [00:03<00:11, 32.40it/s]Loading weights:  27%|█████████████████████████▏                                                                    | 128/478 [00:03<00:05, 63.94it/s]Loading weights:  28%|██████████████████████████▋                                                                   | 136/478 [00:04<00:06, 52.65it/s]Loading weights:  30%|███████████████████████████▉                                                                  | 142/478 [00:04<00:10, 30.97it/s]Loading weights:  31%|████████████████████████████▋                                                                 | 146/478 [00:04<00:11, 28.67it/s]Loading weights:  31%|█████████████████████████████▍                                                                | 150/478 [00:05<00:16, 20.02it/s]Loading weights:  34%|███████████████████████████████▋                                                              | 161/478 [00:05<00:11, 27.87it/s]Loading weights:  35%|█████████████████████████████████                                                             | 168/478 [00:05<00:12, 23.94it/s]Loading weights:  37%|██████████████████████████████████▌                                                           | 176/478 [00:06<00:14, 20.27it/s]Loading weights:  38%|███████████████████████████████████▊                                                          | 182/478 [00:06<00:15, 19.33it/s]Loading weights:  40%|█████████████████████████████████████▊                                                        | 192/478 [00:07<00:12, 23.77it/s]Loading weights:  41%|██████████████████████████████████████▎                                                       | 195/478 [00:07<00:11, 24.26it/s]Loading weights:  41%|██████████████████████████████████████▉                                                       | 198/478 [00:07<00:13, 21.23it/s]Loading weights:  42%|███████████████████████████████████████▌                                                      | 201/478 [00:07<00:15, 17.82it/s]Loading weights:  44%|█████████████████████████████████████████▍                                                    | 211/478 [00:08<00:11, 22.81it/s]Loading weights:  47%|████████████████████████████████████████████                                                  | 224/478 [00:08<00:09, 27.53it/s]Loading weights:  49%|██████████████████████████████████████████████▍                                               | 236/478 [00:09<00:10, 22.89it/s]Loading weights:  50%|███████████████████████████████████████████████                                               | 239/478 [00:09<00:11, 20.64it/s]Loading weights:  51%|███████████████████████████████████████████████▊                                              | 243/478 [00:09<00:11, 21.35it/s]Loading weights:  51%|████████████████████████████████████████████████▍                                             | 246/478 [00:09<00:11, 20.24it/s]Loading weights:  53%|█████████████████████████████████████████████████▊                                            | 253/478 [00:09<00:08, 27.10it/s]Loading weights:  54%|██████████████████████████████████████████████████▌                                           | 257/478 [00:10<00:09, 23.34it/s]Loading weights:  54%|███████████████████████████████████████████████████▏                                          | 260/478 [00:10<00:11, 19.47it/s]Loading weights:  57%|█████████████████████████████████████████████████████▉                                        | 274/478 [00:10<00:07, 29.12it/s]Loading weights:  58%|██████████████████████████████████████████████████████▋                                       | 278/478 [00:10<00:08, 22.76it/s]Loading weights:  59%|███████████████████████████████████████████████████████▋                                      | 283/478 [00:11<00:08, 22.10it/s]Loading weights:  60%|████████████████████████████████████████████████████████▊                                     | 289/478 [00:11<00:08, 22.32it/s]Loading weights:  61%|█████████████████████████████████████████████████████████▍                                    | 292/478 [00:11<00:09, 19.01it/s]Loading weights:  62%|█████████████████████████████████████████████████████████▊                                    | 294/478 [00:11<00:11, 16.50it/s]Loading weights:  63%|██████████████████████████████████████████████████████████▉                                   | 300/478 [00:12<00:11, 15.80it/s]Loading weights:  63%|███████████████████████████████████████████████████████████▍                                  | 302/478 [00:12<00:12, 13.80it/s]Loading weights:  64%|███████████████████████████████████████████████████████████▊                                  | 304/478 [00:12<00:13, 12.59it/s]Loading weights:  64%|████████████████████████████████████████████████████████████▏                                 | 306/478 [00:13<00:15, 10.89it/s]Loading weights:  66%|█████████████████████████████████████████████████████████████▋                                | 314/478 [00:13<00:09, 16.57it/s]Loading weights:  68%|███████████████████████████████████████████████████████████████▉                              | 325/478 [00:13<00:06, 23.91it/s]Loading weights:  71%|██████████████████████████████████████████████████████████████████▋                           | 339/478 [00:14<00:05, 27.80it/s]Loading weights:  72%|███████████████████████████████████████████████████████████████████▎                          | 342/478 [00:14<00:05, 25.55it/s]Loading weights:  74%|█████████████████████████████████████████████████████████████████████▌                        | 354/478 [00:14<00:04, 30.21it/s]Loading weights:  75%|██████████████████████████████████████████████████████████████████████▏                       | 357/478 [00:14<00:05, 23.33it/s]Loading weights:  77%|███████████████████████████████████████████████████████████████████████▉                      | 366/478 [00:15<00:04, 25.22it/s]Loading weights:  78%|█████████████████████████████████████████████████████████████████████████▏                    | 372/478 [00:15<00:03, 27.18it/s]Loading weights:  79%|█████████████████████████████████████████████████████████████████████████▉                    | 376/478 [00:15<00:04, 23.46it/s]Loading weights:  80%|███████████████████████████████████████████████████████████████████████████▌                  | 384/478 [00:15<00:03, 26.23it/s]Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 478/478 [00:15<00:00, 30.06it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-base-handwritten
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.weight | [31mMISSING[0m | 
+encoder.pooler.dense.bias   | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+✅ TrOCR Handwriting Model Loaded Successfully!
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Mello', 'confidence': '98.50% (Transformer Native)', 'lines': ['Mello'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Hello', 'confidence': '98.50% (Transformer Native)', 'lines': ['Hello'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Text 2\nRECOG .', 'confidence': '98.50% (Transformer Native)', 'lines': ['Text 2', 'RECOG .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Text 2\nRECOG .', 'confidence': '98.50% (Transformer Native)', 'lines': ['Text 2', 'RECOG .'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+📤 Single Digit Result: {'error': 'Empty'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': [], 'message': 'Zero text line boundaries resolved.'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '# Something went wrong .\n0 0\na member of the House of Representatives of Representatives', 'confidence': '98.50% (Transformer Native)', 'lines': ['# Something went wrong .', '0 0', 'a member of the House of Representatives of Representatives'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '# Something went wrong .\n0 0\na member of the House of Representatives of Representatives', 'confidence': '98.50% (Transformer Native)', 'lines': ['# Something went wrong .', '0 0', 'a member of the House of Representatives of Representatives'], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': "2'\n1800 That is a brilliant developer instinct . You should never change your backend math if your Almodel 8000\n1800 was already returning high accuracy . If your # keeps model was trained to recognize Canny Edge 800\n3000 outlines feeding it solid threshold blobs will absolutely reduce your accuracy .\n1800 Let's do exactly what you want keep your original high-accuracy backend logic , but apply the 800 000\n3000 invisiblefix so the frontend stops ruining the image .00030003000500050005000\n3021 Here is the ' Best of Both Worlds' solution .000500050005000", 'confidence': '98.50% (Transformer Native)', 'lines': ["2'", '1800 That is a brilliant developer instinct . You should never change your backend math if your Almodel 8000', '1800 was already returning high accuracy . If your # keeps model was trained to recognize Canny Edge 800', '3000 outlines feeding it solid threshold blobs will absolutely reduce your accuracy .', "1800 Let's do exactly what you want keep your original high-accuracy backend logic , but apply the 800 000", '3000 invisiblefix so the frontend stops ruining the image .00030003000500050005000', "3021 Here is the ' Best of Both Worlds' solution .000500050005000"], 'source_type': 'transformer_vision_pipeline'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+📤 Doodle Result: {'error': 'No clear edges found. Try a darker pen.'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m226[0m]

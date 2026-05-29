@@ -1,0 +1,186 @@
+2026-05-23 15:08:22.325361: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-23 15:08:22.362887: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/runner/workspace/main.py:31: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32mINFO[0m:     Started server process [[36m402[0m]
+[32mINFO[0m:     Waiting for application startup.
+========================================
+  SmartVisionAI Backend Starting...
+========================================
+❌ Error: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+✅ HD Doodle AI Loaded! Classes: ['car', 'tree', 'apple', 'flower', 'cat', 'house']
+💡 OCR will load on first /ocr request
+✅ Backend is ready!
+========================================
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.2.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.139.39:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.4.55:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.62.139.39:0 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 842ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '77.08%'}
+[32mINFO[0m:     10.62.139.39:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '97.29%'}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '74.44%'}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 17ms/step
+📤 Single Digit Result: {'digit': 0, 'confidence': '74.44%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+⏳ Loading Transformer-OCR Engine onto CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                   | 0/478 [00:00<?, ?it/s]Loading weights:  67%|████████████████████████████████████▉                  | 321/478 [00:00<00:00, 3209.66it/s]Loading weights: 100%|███████████████████████████████████████████████████████| 478/478 [00:00<00:00, 4380.60it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-base-handwritten
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.bias   | [31mMISSING[0m | 
+encoder.pooler.dense.weight | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+✅ TrOCR Handwriting Model Loaded Successfully!
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.139.39:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.139.37:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'hello .', 'confidence': '51.17%', 'lines': ['hello .']}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.139.37:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Hrishi', 'confidence': '96.25%', 'lines': ['Hrishi']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.215.2:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.215.3:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Dev .', 'confidence': '61.84%', 'lines': ['Dev .']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 67ms/step
+📤 Doodle Result: {'doodle': 'tree', 'confidence': '36.25%', 'Classes': ['car', 'tree', 'apple', 'flower', 'cat', 'house']}
+[32mINFO[0m:     10.62.139.39:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.139.39:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+📤 Doodle Result: {'doodle': 'tree', 'confidence': '36.25%', 'Classes': ['car', 'tree', 'apple', 'flower', 'cat', 'house']}
+[32mINFO[0m:     10.62.215.2:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+📤 Single Digit Result: {'digit': 3, 'confidence': '99.87%'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': '', 'confidence': '0.00%', 'lines': []}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 OCR Request: text.jpg
+📤 OCR Result: {'extracted_text': 'Hello', 'confidence': '62.09%', 'lines': ['Hello']}
+[32mINFO[0m:     10.62.215.2:0 - "[1mPOST /ocr HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '13.83%'}
+[32mINFO[0m:     10.62.139.39:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 17ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '13.83%'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 8, 'confidence': '97.79%'}
+[32mINFO[0m:     10.62.139.38:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 17ms/step
+📤 Single Digit Result: {'digit': 8, 'confidence': '97.79%'}
+[32mINFO[0m:     10.62.2.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '70.16%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+📤 Single Digit Result: {'digit': 1, 'confidence': '79.42%'}
+[32mINFO[0m:     10.62.139.38:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 2, 'confidence': '99.68%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Single Digit Request: digit.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Single Digit Result: {'digit': 3, 'confidence': '99.98%'}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-digit HTTP/1.1[0m" [32m200 OK[0m
+📥 Doodle Request: object.jpg
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+📤 Doodle Result: {'doodle': 'apple', 'confidence': '51.22%', 'Classes': ['car', 'tree', 'apple', 'flower', 'cat', 'house']}
+[32mINFO[0m:     10.62.4.55:0 - "[1mPOST /predict-doodle HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m402[0m]

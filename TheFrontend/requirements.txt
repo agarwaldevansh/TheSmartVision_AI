@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pillow
+numpy==1.26.4
+easyocr
+opencv-python-headless
+scipy
+tensorflow
+pytesseract
+google-genai
+pillow==10.4.0
+tenacity==8.3.0
